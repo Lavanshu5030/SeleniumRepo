@@ -1,0 +1,17 @@
+Requirement to run selenium scripts:
+-Used Eclipse Enterprise Edition 2019-12
+
+Setup:
+1. Create Maven project 
+  - select check box "Create simple project"
+  - Artifact Id:project name
+  - Group Id:package name
+2. Add Dependencies in pom.xml file
+3. Go to mvn repository
+4. Search Selenium java
+5. Search WebDriverManager
+6. Search TestNg
+7. Copy and paste it in pom.xml
+8. Create a class inside src/main/java
+9. Write scripts in java
+9. Run as java application
