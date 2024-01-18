@@ -1,0 +1,32 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class LaunchingBrowser {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 WebDriver driver = new EdgeDriver();
+	        // Maximize the browser
+	        driver.manage().window().maximize();
+	        // Launch Website
+	        //driver.get("https://www.geeksforgeeks.org/");
+	        
+	        try {
+	        	// Launch Website
+		        driver.get("http://www.geeksforgeeks.org/");
+
+
+	            // Optionally add some sleep time to see the opened browser
+	            Thread.sleep(10000);
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        } finally {
+	            // Close the browser
+	            driver.quit();
+	        }
+
+	}
+
+}

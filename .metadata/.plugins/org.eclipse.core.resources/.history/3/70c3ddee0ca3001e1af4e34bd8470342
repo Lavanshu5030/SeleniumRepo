@@ -1,0 +1,39 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class SelectDropDown {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	    WebDriverManager.edgedriver().setup();
+
+        // Instantiate a ChromeDriver class
+        WebDriver driver = new EdgeDriver();
+
+        try {
+            // Maximize the browser
+           // driver.manage().window().maximize();
+
+            // Launch Website
+            driver.get("http://jsbin.com/osebed/2");
+            Select fruits = new Select(driver.findElement(By.id("fruits")));
+            Thread.sleep(2000);
+            fruits.selectByVisibleText("Banana");
+            Thread.sleep(2000);
+            fruits.selectByIndex(3);
+            // Optionally add some sleep time to see the opened browser
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            // Close the browser
+            driver.quit();
+        }
+
+	}
+
+}
