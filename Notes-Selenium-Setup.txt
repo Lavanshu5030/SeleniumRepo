@@ -15,3 +15,137 @@ Setup:
 8. Create a class inside src/main/java
 9. Write scripts in java
 9. Run as java application
+
+
+SELENIUM AUTOMATION
+INTERVIEW PREPARATION
+
+
+1. How selenium came into picture
+2. Manual Testing and it's limitation
+3. What is selenium
+4. Advantages of selenium automation
+5. Limitations of selenium automation
+
+
+Q.What is manual testing?
+- A physical execution of the test cases against various applications... to detect errors and bugs
+- One of the primitive methods of testing a software
+- Execution of test cases without using automation tool
+- Does not require the knowledge of a testing tool
+- Can practically test application
+
+-Use Case
+Let I am be testing a facebook application
+1. Create an account module
+2. Accessibility Testing
+3. Performance Testing
+4. Checking elements like radio buttons
+
+-Limitations of Manual Testing
+1. Extremely time consuming
+2. High error of risk
+3. Requires a tester all the time
+4. Manual Creation of logs and repositories
+5. No support for performance and batch testing
+
+-About Selenium 
+1. Selenium was introduced by Jason Huggins he was an engineer at though works
+2. He Developed a JavaScript program to automate the testing of a web application
+3. The program was called JavaScriptTestRunner
+4. Initially, the new invention was deployed by the inmates at ThoughWorks. However in 2024 it was renamed as selenium 
+and was made Open Source renamed as Selenium and was made open source
+
+Q. How does selenium help?
+1. It executes test cases fast
+2. Accurate results...no human errors
+3. Lesser investment in human resources
+4. Time & Cost effective
+5. Early time to market
+6. Support re-testing
+
+More About Selenium Tool
+-Selenium is an automated testing tool used to test web application across various browsers
+like: Safari, Edge, Chrome, Opera
+
+Q. Why Selenium?
+1. Open Source and platform independent
+2. Can be coded in many programming languages
+3. Primarily developed in JavaScript
+4. Consist to a set of software tools that facilitates testing (components of selenium)
+5. Provides a record/playback tool for authoring tests without learning a test scripting language
+6. We can run selenium script on any platform and browser
+
+Selenium IDE
+1. We can write selenium scripts in any languages
+Ex: Java, Python, Ruby, C#
+2. We don't need in depth knowledge of any programming language that selenium supports
+3. It Support scripts works on all the platforms like: Windows, Linux, Mac
+4. Hence Selenium is most popular and widely used open source tool to test web applications
+
+Selenium is a suite of tools 
+
+Selenium Components
+1. Selenium IDE:
+2. Selenium RC(Remote Controller): It interacts with the browser with help of RC servers...How it gets interacts?
+Using HTTP get and post request methods
+3. Selenium RC was deprecated in version selenium 2.0 and completely replaced by web drivers
+
+Most Important component of selenium 
+1. Selenium Web Driver: It is an programming interface to create and execute test cases.
+2. Selenium Web Driver are the successors of selenium RC
+3. Selenium Grid: It is used to run multiple test scripts on multiple machines at the same time,
+It helps in parallel execution
+
+Selenium IDE Components
+1. Developed by shinya kastani in 2006
+2. Fire fox add-on that helps create tests
+3. Easy to use interface on the browser and exports them as a reusable script
+4. Generally used as prototyping tool
+
+Advancements with new selenium IDE
+1. Reusability of test scripts
+2. Debugging the scripts
+3. Selenium Side Runner: Using this we can execute test case on any browser
+4. Provision for control flow statements
+5. Improved locator functionality
+
+Test Case
+Open Amazon.in
+Search for iPhone
+In the Search Page, assert the title of the page
+
+Step 1:
+Add a new test case: AmazonSearch in selenium IDE
+get the URL of it
+
+Limitations of selenium IDE
+1. Cannot export to WebDriver scripts yet
+2. Does not support data-driven testing yet
+3. Can not perform database testing
+4. Can not provide detailed test report
+
+Selenium RC
+1. Pay Hanmant developed selenium RC
+2. Selenium RC is a server written in Java
+3. RC makes provision for writing application tests in various programming language like java, C#, Perl, PHP
+python etc.
+4. The RC server accepts commands from user program and passes them to the browser as selenium-core JavaScripts
+commands
+
+Short Comings of selenium RC
+1. RC Consists of an additional server that acts as a middle man
+2. This Additional Setup Complicates the architecture
+3. The Time taken for execution of commands is longer
+4. API's Supported by selenium RC are redundant and confusing
+
+Selenium WebDriver
+
+
+
+
+
+
+
+
+
