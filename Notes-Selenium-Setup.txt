@@ -140,6 +140,102 @@ Short Comings of selenium RC
 4. API's Supported by selenium RC are redundant and confusing
 
 Selenium WebDriver
+1. Founded by Simon Stewart
+2. It is cross platform testing framework
+3. Programming interface to create and run test cases
+4. Makes provision to perform action on web element
+5. Does not require a core engine like RC
+6. It also supports Java, C#, PHP, Python, pearl, Ruby etc
+7. Supports framework like TestNG, JUnit, Nunit
+
+
+
+Architecture of WebDriver                         
+
+                                                  ------------------------------
+                                                   Browser Driver    |  Browser  
+                                                  ------------------------------
+                                                   1. Chrome Driver     chrome
+                                                   2. Firefox Driver    Firefox
+                                      -----------  3. Opera Driver      Opera
+                                     |             4. Safari Driver     Safari
+                                                   5. Edge Driver       Edge
+                                     |             ------------------------------
+                                                  HTTP Over HTTP Server
+                                     |
+                           --------------------
+           ----------------|Json Wire Protocol|
+          |                --------------------
+----------------------
+selenium  test script|
+(Java, Pearl, PHP)   |
+----------------------   
+
+
+
+Limitations of WebDriver
+1. Cannot test mobile application. Requires framework like Appium
+2. Can only perform sequential testing hence requires grid for parallel testing
+3. Limited reporting third party tools like TestNG are required
+4. Limited image testing
+
+Comparison between Selenium RC & Web Driver
+
+Selenium RC                                   Selenium WebDriver       
+------------------------------------------------------------------------------------
+1. Complex Architecture                      1. Simple Architecture
+2. Slower Execution                          2. Faster Execution
+3. Requires a RC server to interact          3. Interacts directly with the browser
+   with the browser                          4. Easy to use API'S
+4. Confusing API's                           5. Support for HTML Unit browser
+5. No Support for HTML unit browser    
+-------------------------------------------------------------------------------------
+
+
+Q. How to write an X-path
+1. Element Given
+<span class = "search_icon"></span>
+X-path: //span[@class='search_icon']
+
+X-path: //h2[text()='selenium 3.0 training']
+
+
+Selenium Interview Questions
+
+Q.1 What is selenium IDE?
+Ans: It is an interface to create an execute test cases
+
+ 2. What is Selenium RC?
+Ans: It allows you to write application tests in the various programming languages. 
+     It interacts with the browser through RC Server by using http get/post requests
+     selenium 1.0 version
+
+ 3. What is Selenium Web drivers?
+Ans: Web drivers is a programming interface that helps to create and run test cases.
+     Web Drivers does not require an additional server to interact with the web browser.
+
+ 4. What is Selenium Grid?
+Ans: This is use to run multiple test scripts on multiple machine at the same time.
+     With Selenium web drivers we can only do sequential execution.
+     Selenium grid allows parallel execution of tests on different browser as well as
+     different Operating Systems(OS).
+
+
+Q.2 What are the limitations of selenium?
+1. No Reliable tech support
+2. Tests only Web applications
+3. Limited support for image testing
+4. No build in reporting facility
+5. Limited test Management
+6. Requires Knowledge of programming language
+
+Q3. What are the testing type support by selenium?
+
+
+
+
+
+
 
 
 
