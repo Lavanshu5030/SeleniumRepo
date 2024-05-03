@@ -29,7 +29,7 @@ INTERVIEW PREPARATION
 
 
 Q.What is manual testing?
-- A physical execution of the test cases against various applications... to detect errors and bugs
+- A physical execution of the test cases against various applications...To detect error and bugs
 - One of the primitive methods of testing a software
 - Execution of test cases without using automation tool
 - Does not require the knowledge of a testing tool
@@ -272,7 +272,7 @@ Selenese is the set of selenium commands which are used to test your web applica
 Tester can test the broken links, existence of some objects on the UI. ajax functionality, alerts,
 window, list options and lot more using selenese
 
-Selenium
+Selenium Commands
 Actions                                   Accessors                          Assertions
 Commands which interact directly       -Allow the user to store certain    -Verifies the current state of the application
 with the application                   values to a user defined variable   with an expected
