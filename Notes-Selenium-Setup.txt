@@ -230,6 +230,56 @@ Q.2 What are the limitations of selenium?
 6. Requires Knowledge of programming language
 
 Q3. What are the testing type support by selenium?
+Ans: Selenium support regression testing and functional testing
+
+Regression testing: 
+It is a full or partial selection of already to ensure existing functionalities work fine
+
+Regression testing phase has three steps
+1. Re-testing
+2. Regression test selection
+3. Prioritization of test cases
+
+Functional testing involves some types of testing and they are:
+1. Smoke Test
+2. Sanity Test
+3. Database Test
+
+Functional Testing involves the verification of every function of the application with the required
+specification
+-> Identify test input
+-> Compute test outcome
+-> Execute test
+-> Compare the test outcome
+-> Compare the test outcome with the actual outcome
+
+Q4. What are selenium 2.0 and selenium 3.0 version
+-> Jasson huggins introduced selenium
+
+------------------------------------------------------------------------------
+Selenium 2.0                                          Selenium 3.0
+-----------------------------------------------------------------------------
+1. Selenium RC was deprecated in 2.0         1. Selenium webDriver replaced 
+version                                      selenium RC
+2. Due to RC server execution was slow       2. Does not have RC server
+3. Complex architecture                      3. Simple Architecture
+4. Paul heyman created
+-------------------------------------------------------------------------------
+
+
+Q5. What is selenese? how it is classified
+Selenese is the set of selenium commands which are used to test your web application.
+Tester can test the broken links, existence of some objects on the UI. ajax functionality, alerts,
+window, list options and lot more using selenese
+
+Selenium
+Actions                                   Accessors                          Assertions
+Commands which interact directly       -Allow the user to store certain    -Verifies the current state of the application
+with the application                   values to a user defined variable   with an expected
+                                  
+                                       
+
+
 
 
 
