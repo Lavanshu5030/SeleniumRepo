@@ -278,6 +278,45 @@ Commands which interact directly       -Allow the user to store certain    -Veri
 with the application                   values to a user defined variable   with an expected
                                   
                                        
+Q7. Mention the type of web locators
+Ans: Locator is a command that tells selenium IDE which GUI elements (say TextBox, Buttons, CheckBoxes etc)
+it need to operate on. Locators specify the area action
+
+1. Locators by ID: It takes a parameter of string which is a value of ID attribute and it returns the object
+to findElement() method
+
+Ex: driver.findElement(By.id("User"));
+
+2. Locators by link: if you targeted element is link text then you can use by link text element locator
+to locate that element
+
+Ex: driver.findElement(By.linkText("Today's deals")).click();
+
+3. Locators by name: The first element with the name attribute value matching the location will be returned
+
+Ex: driver.findElement(By.name("books").click());
+
+4. Locators by partial link: The target link can be located using a portion of text in a link text element
+
+Ex: driver.findElement(By.linkText("Service")).click();
+
+5. Locator by TagName: Locates all the elements with the matching tag name
+
+Ex: driver.findElement(By.tagName("Button").click());
+
+6. Locator by className: This finds the element based on the value of the class attribute. if an element has
+ many classes then this match against each of them
+
+Ex: driver.findElement(By.className("inputText"));
+
+7. Locator by X-path: It takes a parameter of string which is a X path expression and it returns an object to
+findElement() method
+
+Ex: driver.findElement(By.Xpath("//span[contains(text(), 'an account')]")).getText();
+
+8. Locator by CSS selector: Locates elements based on the drivers underlying CSS selector engine
+
+Ex: driver.findElement(By.cssSelector("input#email")).sendKeys("myemail@email.com");
 
 
 
